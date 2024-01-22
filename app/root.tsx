@@ -1,5 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
-import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -8,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Navigation from "~/components/Navigation";
 import stylesheet from "~/styles/tailwind.css";
 
 export default function App() {
@@ -20,6 +19,7 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-[#F8EEE2]">
+        <Navigation />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
