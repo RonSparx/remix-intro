@@ -19,7 +19,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-[#F8EEE2]">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
